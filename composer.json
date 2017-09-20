@@ -1,0 +1,54 @@
+{
+    "name": "littlemanco/php-prometheus",
+    "description": "A little applet that exposes PHP runtime information in the Prometheus format",
+    "type": "project",
+    "homepage": "https://github.com/andrewhowdencom/php-prometheus",
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Andrew Howden",
+            "homepage": "https://www.andrewhowden.com/",
+            "role": "Voodoo Artisan"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/andrewhowdencom/php-prometheus/issues",
+        "wiki": "https://github.com/andrewhowdencom/php-prometheus/wiki",
+        "source": "https://github.com/andrewhowdencom/php-prometheus"
+    }, 
+    "require": {
+        "php": ">=7.0",
+        "jimdo/prometheus_client_php": "^0.9.0",
+        "vlucas/phpdotenv": "^2.4"
+    },
+    "require-dev": {
+    },
+    "suggest": {
+    },
+    "conflict": {
+    },
+    "autoload": {
+        "psr-4": {
+            "littlemanco\\php\\metrics\\": "src/"
+        }
+    },
+    "bin": [
+    ],
+    "archive": {
+        "exclude": [
+            "test",
+            "hack",
+            "hooks",
+            ".arclint"
+        ]
+    },
+    "config": {
+        "bin-dir":             "bin",
+        "store-auths":         false,
+        "optimize-autoloader": true,
+        "sort-packages":       true,
+        "apcu-autoloader":     true,
+        "notify-on-install":   false
+    },
+    "minimum-stability": "stable"
+}
